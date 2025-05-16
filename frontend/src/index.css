@@ -1,6 +1,23 @@
 /* @import "./constants/index.js"; */
 @import "tailwindcss";
 @plugin "daisyui";
+
 @plugin "daisyui" {
   themes: all;
+}
+
+:root {
+  min-height: 100vh;
+  background-color: hsl(var(--b1));
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(var(--b1));
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: hsl(var(--b1));
 }

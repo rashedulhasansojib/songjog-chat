@@ -22,35 +22,35 @@ const App = () => {
 
   if (isCheckingAuth && !authUser) {
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="h-[100dvh] flex justify-center items-center">
         <Loader className="size-10 animate-spin" />
       </div>
     );
   }
   return (
-    <div data-theme={theme}>
+    <div data-theme={theme} className="h-[100dvh] flex flex-col overflow-hidden">
       <NavBar />
-
-      <Routes>
-        <Route
-          path="/"
-          element={authUser ? <HomePage /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/signup"
-          element={!authUser ? <SignupPage /> : <Navigate to="/" />}
-        />
-        <Route
-          path="/login"
-          element={!authUser ? <LoginPage /> : <Navigate to="/login" />}
-        />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route
-          path="/profile"
-          element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
-        />
-      </Routes>
-
+      <main className="flex-1 overflow-y-auto">
+        <Routes>
+          <Route
+            path="/"
+            element={authUser ? <HomePage /> : <Navigate to="/login" />}
+          />
+          <Route
+            path="/signup"
+            element={!authUser ? <SignupPage /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/login"
+            element={!authUser ? <LoginPage /> : <Navigate to="/login" />}
+          />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route
+            path="/profile"
+            element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
+          />
+        </Routes>
+      </main>
       <Toaster />
     </div>
   );
