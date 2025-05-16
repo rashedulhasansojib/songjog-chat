@@ -1,2 +1,6 @@
+/* @import "./constants/index.js"; */
 @import "tailwindcss";
 @plugin "daisyui";
+@plugin "daisyui" {
+  themes: all;
+}
