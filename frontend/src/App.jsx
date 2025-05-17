@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
@@ -54,6 +55,7 @@ const App = () => {
           />
         </Routes>
       </main>
+      <Footer />
       <Toaster />
     </div>
   );
