@@ -28,7 +28,10 @@ const App = () => {
     );
   }
   return (
-    <div data-theme={theme} className="h-[100dvh] flex flex-col overflow-hidden">
+    <div
+      data-theme={theme}
+      className="h-[100dvh] flex flex-col overflow-hidden"
+    >
       <NavBar />
       <main className="flex-1 overflow-y-auto">
         <Routes>
@@ -42,7 +45,7 @@ const App = () => {
           />
           <Route
             path="/login"
-            element={!authUser ? <LoginPage /> : <Navigate to="/login" />}
+            element={!authUser ? <LoginPage /> : <Navigate to="/" />}
           />
           <Route path="/settings" element={<SettingsPage />} />
           <Route
