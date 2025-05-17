@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center justify-center">
                     <div className="text-center">
                         <p className="text-sm text-base-content/80">
-                            © {currentYear} Rasheduel Hasan Sojib. All rights reserved.
+                            © {currentYear} Rashedul Hasan Sojib. All rights reserved.
                         </p>
                     </div>
                 </div>
