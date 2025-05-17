@@ -47,8 +47,6 @@ export const useAuthStore = create((set) => ({
       const response = await axiosInstance.post("/auth/login", formData);
       set({ authUser: response.data });
       toast.success("Logged in successfully");
-
-      // get().connectSocket();
     } catch (error) {
       toast.error(error.response.data.message);
     } finally {
@@ -58,10 +56,9 @@ export const useAuthStore = create((set) => ({
 
   logout: async () => {
     try {
-      const response = await axiosInstance.post("/auth/logout");
+      await axiosInstance.post("/auth/logout");
       set({ authUser: null });
       toast.success("Logged out successfully");
-      get().disconnectSocket();
     } catch (error) {
       toast.error(error.response.data.message);
     }
