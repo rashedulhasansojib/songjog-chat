@@ -14,8 +14,7 @@
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
     "lint": "npm run lint --prefix frontend && npm run lint --prefix backend",
     "test": "npm run test --prefix frontend && npm run test --prefix backend",
-    "clean": "rimraf node_modules frontend/node_modules backend/node_modules frontend/dist backend/dist",
-    "postinstall": "npm run install:all"
+    "clean": "rimraf node_modules frontend/node_modules backend/node_modules frontend/dist backend/dist"
   },
   "keywords": [
     "chat",
@@ -26,7 +25,7 @@
     "mongodb",
     "express"
   ],
-  "author": "Rasheduel Hasan Sojib",
+  "author": "Rashedul Hasan Sojib",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2",
@@ -34,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/songjog-chat.git"
+    "url": "https://github.com/rashedulhasansojib/songjog-chat.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/songjog-chat/issues"
+    "url": "https://github.com/rashedulhasansojib/songjog-chat/issues"
   },
-  "homepage": "https://github.com/yourusername/songjog-chat#readme"
+  "homepage": "https://github.com/rashedulhasansojib/songjog-chat#readme"
 }
