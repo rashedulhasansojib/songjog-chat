@@ -76,6 +76,7 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React 19
 - Vite
 - Tailwind CSS
@@ -88,6 +89,7 @@
 - Lucide React Icons
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -101,6 +103,7 @@
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 - MongoDB
@@ -109,20 +112,23 @@
 ### Installation
 
 1. Clone the repository
+
 ```bash
-git clone https://github.com/yourusername/songjog-chat.git
+git clone https://github.com/rashedulhasansojib/songjog-chat.git
 cd songjog-chat
 ```
 
 2. Install all dependencies (frontend and backend)
+
 ```bash
 npm install
 ```
 
 3. Environment Setup
-Create `.env` files in both frontend and backend directories:
+   Create `.env` files in both frontend and backend directories:
 
 Backend (.env):
+
 ```env
 PORT=5000
 MONGODB_URI=your_mongodb_uri
@@ -133,6 +139,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ```
 
 Frontend (.env):
+
 ```env
 VITE_API_URL=http://localhost:5000
 ```
@@ -169,12 +176,15 @@ npm run clean
 ### Development Workflow
 
 1. Start the development servers:
+
 ```bash
 npm run dev
 ```
+
 This will start both frontend (default: http://localhost:5173) and backend (default: http://localhost:5000) servers concurrently.
 
 2. Make your changes in the respective directories:
+
    - Frontend code is in the `frontend/` directory
    - Backend code is in the `backend/` directory
 
@@ -185,11 +195,13 @@ This will start both frontend (default: http://localhost:5173) and backend (defa
 ### Production Build
 
 1. Build the application:
+
 ```bash
 npm run build
 ```
 
 2. Start the production server:
+
 ```bash
 npm start
 ```
@@ -199,12 +211,14 @@ npm start
 Make sure to set up the following environment variables in your production environment:
 
 Backend:
+
 - `PORT`: The port your server will run on
 - `MONGODB_URI`: Your MongoDB connection string
 - `JWT_SECRET`: Secret key for JWT token generation
 - `CLOUDINARY_*`: Your Cloudinary credentials
 
 Frontend:
+
 - `VITE_API_URL`: Your backend API URL
 
 ## 🤝 Contributing
@@ -233,8 +247,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Rasheduel Hasan Sojib**
-- GitHub: [@yourusername](https://github.com/rashedulhasansojib)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/rashedul-hasan-sojib)
+
+- GitHub: [@rashedulhasansojib](https://github.com/rashedulhasansojib)
+- LinkedIn: [rashedul-hasan-sojib](https://linkedin.com/in/rashedul-hasan-sojib)
 
 ## 🙏 Acknowledgments
 
@@ -244,4 +259,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [MongoDB](https://www.mongodb.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com/)
-- [Cloudinary](https://cloudinary.com/) 
+- [Cloudinary](https://cloudinary.com/)
