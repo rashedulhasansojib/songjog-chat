@@ -38,8 +38,6 @@ const MessageInput = () => {
         image: imagePreview,
       });
 
-      console.log("Message send sucessfully!");
-
       // Clear form
       setText("");
       setImagePreview(null);
